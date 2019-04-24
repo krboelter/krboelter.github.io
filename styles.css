@@ -8,17 +8,71 @@ body, html{
     color:#666;
 }
 
+.pimg1, .pimg2, .pimg3{
+    position:relative;
+    poacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+}
+
+/* images from google photos then the google embed website */
 .pimg1{
-    background-image:url('.../img/green_keyboard.jpg');
+    background-image:url('https://lh3.googleusercontent.com/0Qj0TjKufJ3UMJjE1fTfyBQw5TYe78mLfl6q1vgyqtxai-eiE3MfPSYMbknZoesqGsDuOuIGU870soDRxMLCqYpkjAUxMm-04Yn6SsA4sGnrL4mxWLaygvMM1DLv5hE6vXopEDggSQ=w2400');
     min-height:100%;
 }
 
 .pimg2{
-    background-image:url('.../img/controller.jpg');
+    background-image:url('https://lh3.googleusercontent.com/-dqjYrVg18ITW-2uO2mpQVq_8xhatqAimrm9NH2JV7Oy-lbeUobeY23lJV3ruguCPplj6LxbaK4hGtqMhcg20jGy3HK6X8qnWCvvXlyglyfa9IleHE8H8Qcz5tv3c7CElXBJrL9MAQ=w2400');
     min-height:400px;
 }
 
 .pimg3{
-    background-image:url('.../img/nes_controller.jpg');
+    background-image:url('https://lh3.googleusercontent.com/yjtgYAUGu3njV1DtoZaFYbpu1YWf6pY-SJgI8k_RsunQa8Ag6YjkSBPNO-vRqBjsOZAZmaiqJobQIJYUCENxilqf2UeU6wrf-5V65axM79LTylgqbHuMZyiJxTpdOY9T167vMUNgqA=w2400');
     min-height:400px;
+}
+
+.section{
+    text-align:center;
+    padding:50px 80px;
+}
+
+.section-light{
+    background-color:#f4f4f4;
+    color:#666;
+}
+
+.section-dark{
+    background-color:#282e34;
+    color:#ddd;
+}
+
+.ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+}
+
+/* .ptext .border .trans{
+    background-color:transparent;
+} */
+
+/* if under the width shown, don't parallax the images */
+@media(max-width:568px){
+    .pimg1 .pimg2 .pimg3{
+        background-attachment:scroll;
+    }
 }
