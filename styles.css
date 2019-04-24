@@ -71,8 +71,8 @@ body, html{
 } */
 
 /* if under the width shown, don't parallax the images */
-@media(max-width:568px){
+/* @media(max-width:568px){
     .pimg1 .pimg2 .pimg3{
         background-attachment:scroll;
     }
-}
+} */
