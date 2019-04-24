@@ -10,7 +10,7 @@ body, html{
 
 .pimg1, .pimg2, .pimg3{
     position:relative;
-    poacity:0.70;
+    opacity:0.90;
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
