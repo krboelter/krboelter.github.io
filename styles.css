@@ -14,7 +14,6 @@ body, html{
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-
     background-attachment:fixed;
 }
 
@@ -76,3 +75,14 @@ body, html{
         background-attachment:scroll;
     }
 } */
+
+#facebook{
+    padding: 25px;
+    text-align: center;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    background: black;
+    color:#666;
+}
