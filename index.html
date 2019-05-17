@@ -8,60 +8,29 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="pimg1">
-            <div class="ptext">
-                <span class="border">
-                    Korisin Gaming
-                </span>
-            </div>
-        </div>
-
-        <section class="section section-light">
-            <h2>The future of this website</h2>
-            <p>I plan to post all of my games, videos and concepts here.</p>
-        </section>
-
-        <div class="pimg2">
-            <div class="ptext">
-                <span class="border">
-                    Games
-                </span>
-            </div>
-        </div>
-
-        <section class="section section-dark">
-            <h2>Check out my games!</h2>
-            <p>I will put all of my completed games for download here.</p>
-        </section>
-
-        <div class="pimg3">
-            <div class="ptext">
-                <span class="border">
-                    Videos
-                </span>
-            </div>
-        </div>
-
-        <section class="section section-dark">
-            <h2>Videos</h2>
-            <p>Here is where I will put all of my videos showcasing my completed games and concepts of games in progress.</p>
-        </section>
-
-        <div class="pimg1">
-            <div class="ptext">
-                <span class="border">
-                    Concepts and Games in Beta
-                </span>
-            </div>
-        </div>
-
-        <div>
-            <span>
-                <footer id="facebook">
-                    <a href="https://www.facebook.com/ken.boelter.5" target="_blank">Check out my Facebook Page</a>
-                </footer>
-            </span>
-        </div>
-
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="right-align"><a href="#signUp">Sign Up</a></li>
+                <li class="right-align"><a href="#signIn">Sign In</a></li>
+                <li class="dropdown"><a href="javascript:void(0)"
+                        onClick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
     </body>
+
+    <script>
+        function dropdownMenu(){
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav"){
+                x.className += "openMenu";
+            }
+            else{
+                x.className = "topnav";
+            }
+        }
+    </script>
 </html>

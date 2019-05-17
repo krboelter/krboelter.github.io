@@ -1,88 +1,68 @@
-body, html{
-    height:100%;
-    margin:0;
-    font-size:16px;
-    font-family:"Lato", sans-serif;
-    font-weight:400;
-    line-height:1.8em;
-    color:#666;
+/* ########## Defaults ########## */
+nav,
+footer,
+header{
+    display: block;
+    font-family: "Calibri", sans-serif, serif;
+    font-size: 1.5em;
 }
 
-.pimg1, .pimg2, .pimg3{
-    position:relative;
-    opacity:0.90;
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+body{
+    line-height: 1;
+    margin: 0;
 }
 
-/* images from google photos then the google embed website */
-.pimg1{
-    background-image:url('https://lh3.googleusercontent.com/0Qj0TjKufJ3UMJjE1fTfyBQw5TYe78mLfl6q1vgyqtxai-eiE3MfPSYMbknZoesqGsDuOuIGU870soDRxMLCqYpkjAUxMm-04Yn6SsA4sGnrL4mxWLaygvMM1DLv5hE6vXopEDggSQ=w2400');
-    min-height:100%;
+
+/* ########## Nav Bar ########## */
+nav{
+    width: 100%;
+    margin: 0;
 }
 
-.pimg2{
-    background-image:url('https://lh3.googleusercontent.com/-dqjYrVg18ITW-2uO2mpQVq_8xhatqAimrm9NH2JV7Oy-lbeUobeY23lJV3ruguCPplj6LxbaK4hGtqMhcg20jGy3HK6X8qnWCvvXlyglyfa9IleHE8H8Qcz5tv3c7CElXBJrL9MAQ=w2400');
-    min-height:400px;
+nav ul{
+    background-color: #666;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-.pimg3{
-    background-image:url('https://lh3.googleusercontent.com/yjtgYAUGu3njV1DtoZaFYbpu1YWf6pY-SJgI8k_RsunQa8Ag6YjkSBPNO-vRqBjsOZAZmaiqJobQIJYUCENxilqf2UeU6wrf-5V65axM79LTylgqbHuMZyiJxTpdOY9T167vMUNgqA=w2400');
-    min-height:400px;
+ul.topnav li{
+    list-style: none;
+    float: left;
 }
 
-.section{
-    text-align:center;
-    padding:50px 80px;
+ul.topnav li a{
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
 }
 
-.section-light{
-    background-color:#f4f4f4;
-    color:#666;
+ul.topnav li.dropdown{
+    display: none;
 }
 
-.section-dark{
-    background-color:#282e34;
-    color:#ddd;
-}
+/* ########## Custom Styles ########## */
 
-.ptext{
-    position:absolute;
-    top:50%;
-    width:100%;
-    text-align:center;
-    color:#000;
-    font-size:27px;
-    letter-spacing:8px;
-    text-transform:uppercase;
-}
 
-.ptext .border{
-    background-color:#111;
-    color:#fff;
-    padding:20px;
-}
+/* ########## Mobile ########## */
 
-/* .ptext .border .trans{
-    background-color:transparent;
-} */
-
-/* if under the width shown, don't parallax the images */
-/* @media(max-width:568px){
-    .pimg1 .pimg2 .pimg3{
-        background-attachment:scroll;
+@media screen and (max-width: 600px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
     }
-} */
 
-#facebook{
-    padding: 25px;
-    text-align: center;
-    font-size:16px;
-    font-family:"Lato", sans-serif;
-    font-weight:400;
-    line-height:1.8em;
-    background: black;
-    color:#666;
+    ul.topnav li.dropdown{
+        display: block;
+        margin: 0;
+    }
+
+    ul.topnav.responsive{
+        display: inline;
+    }
+
+    ul.topnav.responsive li.dropdown{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
