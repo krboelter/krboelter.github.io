@@ -4,9 +4,13 @@ body{
     margin: 0;
 }
 
+nav div.topnav{
+    background-color: black;
+    height: 2em;
+}
+
 ul{
     margin: 0;
-    background-color: black;
     width: 100%;
     padding: 0;
 }
@@ -18,8 +22,8 @@ ul li{
     padding: 7px;
 }
 
-ul li.left-align{
-    
+ul li.right-align{
+    text-align: right;
 }
 
 ul li a{
