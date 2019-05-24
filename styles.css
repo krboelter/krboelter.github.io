@@ -1,38 +1,67 @@
-/* ########## Custom ########## */
-body{
+/* ########## Defaults ########## */
+nav,
+header,
+footer{
     display: block;
+}
+
+body{
+    line-height: 1;
     margin: 0;
 }
 
-nav div.topnav{
-    background-color: black;
-    height: 2em;
-}
+/* ########## Nav ########## */
 
-ul{
-    margin: 0;
+nav{
     width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: black;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-ul li{
-    color: white;
-    font-size: 1.5em;
-    display: inline;
-    padding: 7px;
-}
-
-ul li.right-align{
-    text-align: right;
-}
-
-ul li a{
-    color: lightgray;
+ul.topnav li{
     text-decoration: none;
+    float: left;
 }
+
+ul.topnav li.nav-right{
+    float: right;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    color: lightgray;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    padding: 16px;
+}
+
+ul.topnav li a:hover{
+    color: black;
+    background-color: #8a00e6;
+    font-weight: bold;
+}
+
+ul.topnav li.dropdownIcon{
+    display: none;
+}
+
 /* ########## Mobile ########## */
-@media screen and (min-width: 600px){
-    nav div.topnav:not(:nth-child(1)){
-        display: hidden;
+@media screen and (max-width: 600px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float: right;
     }
 }
