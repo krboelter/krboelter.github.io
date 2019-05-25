@@ -8,6 +8,7 @@ footer{
 body{
     line-height: 1;
     margin: 0;
+    background: #1a1a1a;
 }
 
 /* ########## Nav ########## */
@@ -19,6 +20,7 @@ nav{
 
 nav ul{
     background-color: black;
+    font-family: 'Orbitron', sans-serif;
     overflow: hidden;
     list-style: none;
     margin: 0;
@@ -52,6 +54,12 @@ ul.topnav li a:hover{
 
 ul.topnav li.dropdownIcon{
     display: none;
+}
+
+/* ########## Custom ########## */
+
+.pageBackground{
+    background-image: radial-gradient(circle, rgb(80, 80, 80), black);
 }
 
 /* ########## Mobile ########## */
