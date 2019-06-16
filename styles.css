@@ -7,53 +7,47 @@ footer{
 
 body{
     line-height: 1;
-    margin: 0;
+    margin: 0 auto;
     background: #1a1a1a;
 }
+
 
 /* ########## Nav ########## */
 
 nav{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    margin: 0;
-}
-
-nav ul{
+    margin: 0 auto;
+    padding: 20px 0;
     background-color: black;
     font-family: 'Orbitron', sans-serif;
     overflow: hidden;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-ul.topnav li{
+nav a{
     text-decoration: none;
-    float: left;
+    font-weight: bold;
+    color: gray;
+    padding: 15px 20px;
 }
 
-ul.topnav li.nav-right{
-    float: right;
-}
-
-ul.topnav li a{
-    display: block;
-    text-decoration: none;
-    color: lightgray;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1.4em;
-    padding: 16px;
-}
-
-ul.topnav li a:hover{
+nav a:hover{
     color: black;
-    background-color: #8a00e6;
+    background-color: #9900cc;
     font-weight: bold;
 }
 
-ul.topnav li.dropdownIcon{
-    display: none;
+h2{
+    color: #f2f2f2;
+    font-family: 'Orbitron', sans-serif;
+}
+
+p{
+    color: gray;
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    line-height: 1.2em;
 }
 
 /* ########## Custom ########## */
@@ -62,13 +56,26 @@ ul.topnav li.dropdownIcon{
     background-image: radial-gradient(circle, rgb(80, 80, 80), black);
 }
 
+.heading{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    text-align: justify;
+    padding: 35px;
+    margin: 35px 20px;
+    border: 4px inset #9900cc;
+    box-shadow: 6px 6px 3px black;
+}
+
 /* ########## Mobile ########## */
 @media screen and (max-width: 600px){
-    ul.topnav li:not(:nth-child(1)){
+    nav.topnav a:not(:nth-child(1)){
         display: none;
     }
 
-    ul.topnav li.dropdownIcon{
+    nav.topnav a.dropdownIcon{
         display: block;
         float: right;
     }
